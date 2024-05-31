@@ -17,6 +17,11 @@ app.get('/api/books', (req, res)=>{
             id: 2,
             title: 'no longer human',
             content: 'very good'
+        },
+        {
+            id:3,
+            title: 'once upon a broken heart',
+            content: 'ok'
         }
     ]
     res.send(books)

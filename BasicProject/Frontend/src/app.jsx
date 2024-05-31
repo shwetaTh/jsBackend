@@ -22,12 +22,12 @@ export function App() {
       <h1>Full Stack Project</h1>
       <p>Books: {books.length}</p>
       {
-        books.map((book, index)=>{
+        books.map((book, index)=>(
           <div key={book.id}>
             <h3>{book.title}</h3>
             <p>{book.content}</p>
           </div>
-        })
+        ))
       }
     </>
   )
