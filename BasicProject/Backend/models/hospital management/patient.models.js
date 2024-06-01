@@ -29,6 +29,10 @@ const patientSchema = new mongoose.Schema(
         admittedIn:{
             type: mongoose.Schema.Types.ObjectId,
             ref: "Hospital"
+        },
+        reportId:{
+            type: mongoose.Schema.Types.ObjectId,
+            ref:"MedicalRecord"
         }
     },{timestamps: true})
 export const Patient = mongoose.model("Patient", patientSchema)    
